@@ -1,0 +1,50 @@
+html,
+body,
+.App,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fcfaff;
+}
+
+.container-padding {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.container {
+  @extend .container-padding;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: $sd) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: $md) {
+  .container-padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: $ld) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: $eld) {
+  .container-padding {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}

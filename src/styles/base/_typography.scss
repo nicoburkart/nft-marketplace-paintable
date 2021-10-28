@@ -1,0 +1,118 @@
+@import '../abstracts/variables';
+
+@font-face {
+  font-family: 'p-light';
+  src: url('/assets/fonts/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'p-regular';
+  src: url('/assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'p-semi-bold';
+  src: url('/assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'p-bold';
+  src: url('/assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+html {
+  color: $font-color-dark;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: $ff_reg;
+  color: $font-color-dark;
+}
+
+h1,
+h2,
+button {
+  font-family: $ff_bold;
+  color: $font-color-dark;
+}
+
+h3,
+h4 {
+  font-family: $ff_s_bold;
+  color: $font-color-dark;
+}
+
+a,
+p {
+  font-family: $ff_light;
+  color: $font-color-dark;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+label {
+  font-family: $ff_s_bold;
+  font-size: 16px;
+}
+
+input {
+  font-size: 18px;
+  font-family: $ff_bold;
+  color: $font-color-dark;
+}
+
+//font-sizes
+
+button {
+  font-size: 1rem;
+}
+
+.header {
+  text-align: center;
+  font-family: $ff_bold;
+  font-size: 2rem;
+}
+
+.section-header {
+  font-family: $ff_s_bold;
+  font-size: 1.5rem; //24px
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.sub-section-header {
+  font-family: $ff_reg;
+  font-size: 1.125rem; //18px
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.sub-sub-section-header {
+  @extend .sub-section-header;
+  font-family: $ff_s_bold;
+  font-size: 13px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: $sd) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: $md) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: $ld) {
+  html {
+    font-size: 120%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: $eld) {
+}

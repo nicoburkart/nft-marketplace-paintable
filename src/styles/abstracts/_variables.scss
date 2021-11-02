@@ -1,6 +1,7 @@
 //general colors
 $primary-color: #7f6aff;
 $secondary-color: #c67aff;
+$background-color: #fcfaff;
 
 //typography colors
 $font-color-darker: #2f2e2e;
@@ -14,7 +15,7 @@ $ff_s_bold: p-semi-bold;
 $ff_reg: p-regular;
 $ff_light: p-light;
 
-$fs_xl: clamp(3.5rem, 8vw, 8rem);
+$fs_xl: clamp(2rem, 4vw, 4rem);
 
 //breakpoints
 $sd: '576px';

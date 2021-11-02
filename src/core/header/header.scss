@@ -1,0 +1,46 @@
+@import 'styles/abstracts/variables';
+
+#nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: unset;
+  position: fixed;
+  z-index: 10;
+  //background-color: $background-color;
+  .logo {
+    font-size: 30px;
+    font-family: $ff_bold;
+  }
+  .logo-decorator {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    background: linear-gradient(133.84deg, #806bff -8.24%, #c77bff 105.65%);
+    border-radius: 10px;
+  }
+
+  .right-align {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 1rem;
+    margin-left: auto;
+
+    .secondary-btn {
+      display: none;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: $sd) {
+  #nav {
+    .right-align {
+      .secondary-btn {
+        display: block;
+      }
+    }
+  }
+}

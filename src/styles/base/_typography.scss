@@ -73,7 +73,7 @@ button {
 .header {
   text-align: center;
   font-family: $ff_bold;
-  font-size: 2rem;
+  font-size: $fs_xl;
 }
 
 .section-header {
@@ -109,7 +109,7 @@ button {
 // Large devices (desktops, 992px and up)
 @media (min-width: $ld) {
   html {
-    font-size: 120%;
+    font-size: 100%;
   }
 }
 

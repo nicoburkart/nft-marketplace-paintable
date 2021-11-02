@@ -1,0 +1,12 @@
+<svg width="100%" height="100%" viewBox="0 0 482 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.991663,0,0,0.994793,171.404,-78.58)">
+        <g>
+            <g transform="matrix(1.17813,0,0,1.17813,-197.502,-71.3605)">
+                <path d="M343.523,449.31C413.709,516.548 449.241,593.308 422.885,620.758C396.529,648.208 318.265,615.953 248.078,548.715C177.892,481.477 142.36,404.718 168.716,377.268C195.072,349.818 273.336,382.072 343.523,449.31Z" style="fill:rgb(236,22,255);fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(1.17813,0,0,1.17813,-197.502,-71.3605)">
+                <path d="M23.15,154.24C41.324,191.656 196.682,344.354 173.219,456.621C149.756,568.889 468.06,336.446 410.803,236.473C354.025,137.329 4.966,116.824 23.15,154.24Z" style="fill:rgb(78,167,250);fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>

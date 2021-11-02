@@ -1,10 +1,12 @@
-import Home from './modules/home/home';
+import CoreHeader from './core/header/header';
+import AppHome from './modules/home/home';
 import './styles/main.scss';
 
 function App() {
   return (
     <div className="App">
-      <Home></Home>
+      <CoreHeader></CoreHeader>
+      <AppHome></AppHome>
     </div>
   );
 }

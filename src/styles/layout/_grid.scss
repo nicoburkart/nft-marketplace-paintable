@@ -7,7 +7,7 @@ body,
 }
 
 body {
-  background-color: #fcfaff;
+  background-color: $background-color;
 }
 
 .container-padding {
@@ -32,19 +32,19 @@ body {
 // Medium devices (tablets, 768px and up)
 @media (min-width: $md) {
   .container-padding {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: $ld) {
+  .container-padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: $eld) {
-  .container-padding {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
 }

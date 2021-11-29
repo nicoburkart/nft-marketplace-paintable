@@ -1,0 +1,132 @@
+@import 'styles/abstracts/variables';
+
+.collection-card {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  max-height: 500px;
+  min-height: 450px;
+  padding: 1rem;
+  border: solid #d6d6d6 1px;
+  border-radius: 10px;
+  background-color: rgba(249, 249, 249, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .collection-card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .creator {
+      display: flex;
+      align-items: center;
+      p {
+        font-family: $ff_s_bold;
+      }
+      .avatar {
+        margin-right: 10px;
+        height: 30px;
+        width: 30px;
+        cursor: default;
+      }
+    }
+
+    .interaction {
+      padding-left: 0.3rem;
+      position: relative;
+      cursor: pointer;
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+
+      .interaction-menu {
+        background-color: rgb(56, 56, 56);
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        position: absolute;
+        min-width: 100px;
+
+        li {
+          cursor: pointer;
+          color: white;
+          border-bottom: 1px solid rgba(216, 216, 216, 0.301);
+          padding: 0.5rem 0.5rem;
+          &:last-of-type {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  .collection-card-body {
+    display: flex;
+
+    .artwork-wrapper {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      img {
+        border-radius: 10px;
+        max-height: 250px;
+        max-width: 100%;
+      }
+    }
+
+    .overlay::before {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      background-color: rgba(34, 34, 34, 0.308);
+      backdrop-filter: blur(2px);
+      height: calc(100% - 3px);
+      width: 100%;
+    }
+    .overlay::after {
+      content: 'Artwork will be created soon.';
+      font-family: $ff_s_bold;
+      line-height: 1.2rem;
+      text-align: center;
+      color: white;
+      box-sizing: border-box;
+      position: absolute;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      top: 50%;
+    }
+  }
+
+  .collection-card-footer {
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+    .nft-infos {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-family: $ff_reg;
+      }
+
+      .info-label {
+        line-height: 16px;
+        font-size: 12px;
+        font-family: $ff_light;
+      }
+
+      .info-right {
+        text-align: right;
+      }
+    }
+  }
+}

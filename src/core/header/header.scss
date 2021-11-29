@@ -1,46 +1,36 @@
 @import 'styles/abstracts/variables';
 
 #nav {
-  margin-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   max-width: unset;
   position: fixed;
   z-index: 10;
-  //background-color: $background-color;
+  background: linear-gradient(#{$background-color}, #fcfaff50);
+  backdrop-filter: blur(20px);
+
   .logo {
     font-size: 30px;
     font-family: $ff_bold;
-  }
-  .logo-decorator {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-    background: linear-gradient(133.84deg, #806bff -8.24%, #c77bff 105.65%);
-    border-radius: 10px;
-  }
-
-  .right-align {
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    gap: 1rem;
-    margin-left: auto;
-
-    .secondary-btn {
-      display: none;
-    }
-  }
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: $sd) {
-  #nav {
-    .right-align {
-      .secondary-btn {
-        display: block;
-      }
+    align-items: center;
+    &::before {
+      content: '';
+      display: block;
+      margin-right: 0.5rem;
+      height: 40px;
+      width: 40px;
+      border-radius: 10px;
+      background: linear-gradient(
+        133.84deg,
+        #{$primary-color} -8.24%,
+        #{$secondary-color} 105.65%
+      );
     }
   }
 }

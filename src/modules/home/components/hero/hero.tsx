@@ -1,6 +1,7 @@
 import './hero.scss';
 
 import heroImg from 'assets/images/hero-img.png';
+import { Link } from 'react-router-dom';
 
 function HomeHero() {
   return (
@@ -14,7 +15,9 @@ function HomeHero() {
             Upload a picture and create an artwork with our ai. <br /> Sell the
             artwork as a NFT.
           </h2>
-          <button className="primary-btn">Create</button>
+          <Link to="/create">
+            <button className="primary-btn">Create</button>
+          </Link>
         </div>
         <div className="section-right">
           <img

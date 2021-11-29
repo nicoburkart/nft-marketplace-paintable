@@ -29,6 +29,13 @@ $padding-top-bottom: 1.5rem;
   border: 3px solid transparent;
 }
 
+.light-blue-btn {
+  @extend .btn;
+  min-width: $btn-min-width;
+  background: rgba(0, 102, 255, 0.15);
+  color: #0065ff;
+}
+
 .input-btn {
   position: absolute;
   cursor: pointer;

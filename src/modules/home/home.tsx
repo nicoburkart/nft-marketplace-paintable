@@ -5,10 +5,6 @@ function AppHome() {
   return (
     <div id="home">
       <Hero></Hero>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
     </div>
   );
 }

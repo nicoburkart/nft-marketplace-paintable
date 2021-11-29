@@ -1,0 +1,68 @@
+@import 'styles/abstracts/variables';
+
+#profile-header {
+  padding-top: calc(#{$nav-height} + 1rem);
+  flex-direction: column;
+
+  .profile-banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('/assets/images/profile-banner.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: calc(40px + 1.5rem);
+    .avatar {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -40px;
+      height: 120px;
+      width: 120px;
+      cursor: default;
+    }
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 0.7rem;
+  }
+
+  .section-header {
+    margin: 0;
+  }
+
+  .profile-name {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    button {
+      position: absolute;
+      height: 30px;
+      right: -0.5rem;
+      transform: translateX(100%);
+      cursor: pointer;
+      padding: 0.1rem;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .public-address {
+    background-color: #ebebeb;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,10 @@
+#artwork-jobs {
+  .collection-card {
+    .overlay {
+      &::before,
+      &::after {
+        opacity: 0;
+      }
+    }
+  }
+}

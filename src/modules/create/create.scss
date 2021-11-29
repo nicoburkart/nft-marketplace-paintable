@@ -1,0 +1,7 @@
+@import 'styles/abstracts/variables';
+
+#create {
+  padding-top: calc(#{$nav-height} + 1rem);
+  padding-bottom: 5rem;
+  justify-content: center;
+}
